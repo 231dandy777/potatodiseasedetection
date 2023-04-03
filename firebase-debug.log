@@ -1,0 +1,155 @@
+[debug] [2023-04-03T06:34:24.398Z] ----------------------------------------------------------------------
+[debug] [2023-04-03T06:34:24.402Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sharo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-03T06:34:24.403Z] CLI Version:   11.25.2
+[debug] [2023-04-03T06:34:24.403Z] Platform:      win32
+[debug] [2023-04-03T06:34:24.403Z] Node Version:  v19.8.1
+[debug] [2023-04-03T06:34:24.403Z] Time:          Mon Apr 03 2023 11:34:24 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-04-03T06:34:24.404Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-03T06:34:24.419Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-03T06:34:24.420Z] > authorizing via signed-in user (sharoon9yaqub@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Sharoon\00fice\Data Science\Project\Potato Disease Classification End to End\archive\frontend
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-04-03T06:35:40.203Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-04-03T06:35:40.203Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"potatodiseasedetection1","name":"potatodiseasedetection1"}
+[debug] [2023-04-03T06:35:42.005Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-04-03T06:35:42.005Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6329557499337744591"}
+[debug] [2023-04-03T06:35:42.006Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 [none]
+[debug] [2023-04-03T06:35:43.419Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 200
+[debug] [2023-04-03T06:35:43.419Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 {"name":"operations/cp.6329557499337744591"}
+[debug] [2023-04-03T06:35:43.921Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-04-03T06:35:43.922Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 [none]
+[debug] [2023-04-03T06:35:44.349Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 200
+[debug] [2023-04-03T06:35:44.349Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 {"name":"operations/cp.6329557499337744591","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-04-03T06:35:45.358Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-04-03T06:35:45.359Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 [none]
+[debug] [2023-04-03T06:35:45.817Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 200
+[debug] [2023-04-03T06:35:45.817Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6329557499337744591 {"name":"operations/cp.6329557499337744591","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"960779943389","projectId":"potatodiseasedetection1","lifecycleState":"ACTIVE","name":"potatodiseasedetection1","createTime":"2023-04-03T06:35:43.304Z"}}
+[debug] [2023-04-03T06:35:45.819Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/potatodiseasedetection1:addFirebase [none]
+[debug] [2023-04-03T06:35:49.367Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/potatodiseasedetection1:addFirebase 200
+[debug] [2023-04-03T06:35:49.367Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/potatodiseasedetection1:addFirebase {"name":"operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx"}
+[debug] [2023-04-03T06:35:49.367Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx [none]
+[debug] [2023-04-03T06:35:50.250Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx 200
+[debug] [2023-04-03T06:35:50.250Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx {"name":"operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx"}
+[debug] [2023-04-03T06:35:50.764Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-03T06:35:50.765Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx [none]
+[debug] [2023-04-03T06:35:51.642Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx 200
+[debug] [2023-04-03T06:35:51.643Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx {"name":"operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx"}
+[debug] [2023-04-03T06:35:52.652Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-03T06:35:52.653Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx [none]
+[debug] [2023-04-03T06:35:53.577Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx 200
+[debug] [2023-04-03T06:35:53.577Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx {"name":"operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx"}
+[debug] [2023-04-03T06:35:55.584Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-03T06:35:55.585Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx [none]
+[debug] [2023-04-03T06:35:56.323Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx 200
+[debug] [2023-04-03T06:35:56.323Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx {"name":"operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx"}
+[debug] [2023-04-03T06:36:00.333Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-04-03T06:36:00.334Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx [none]
+[debug] [2023-04-03T06:36:01.149Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx 200
+[debug] [2023-04-03T06:36:01.149Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx {"name":"operations/workflows/NjdmNGJmYTktZjNlYi00Y2MyLTg4YjEtMDIzYmY5MGQ3ZTEx","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"potatodiseasedetection1","projectNumber":"960779943389","displayName":"potatodiseasedetection1","name":"projects/potatodiseasedetection1","resources":{"hostingSite":"potatodiseasedetection1"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: potatodiseasedetection1
+[info]    - Project Name: potatodiseasedetection1
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/potatodiseasedetection1/overview
+[info] i  Using project potatodiseasedetection1 (potatodiseasedetection1) 
+[info] 
+=== Functions Setup
+[debug] [2023-04-03T06:36:01.161Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-03T06:36:01.161Z] > authorizing via signed-in user (sharoon9yaqub@gmail.com)
+[debug] [2023-04-03T06:36:01.162Z] [iam] checking project potatodiseasedetection1 for permissions ["firebase.projects.get"]
+[debug] [2023-04-03T06:36:01.163Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/potatodiseasedetection1:testIamPermissions [none]
+[debug] [2023-04-03T06:36:01.163Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/potatodiseasedetection1:testIamPermissions x-goog-quota-user=projects/potatodiseasedetection1
+[debug] [2023-04-03T06:36:01.163Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/potatodiseasedetection1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-03T06:36:03.008Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/potatodiseasedetection1:testIamPermissions 200
+[debug] [2023-04-03T06:36:03.009Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/potatodiseasedetection1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-03T06:36:03.009Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-03T06:36:03.010Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/potatodiseasedetection1
+[debug] [2023-04-03T06:36:03.012Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-04-03T06:36:03.012Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/potatodiseasedetection1
+[debug] [2023-04-03T06:36:05.232Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-03T06:36:05.232Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-04-03T06:36:05.232Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-04-03T06:36:05.232Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/potatodiseasedetection1
+[debug] [2023-04-03T06:36:05.338Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com 200
+[debug] [2023-04-03T06:36:05.338Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-04-03T06:36:05.338Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com:enable [none]
+[debug] [2023-04-03T06:36:05.339Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com:enable x-goog-quota-user=projects/potatodiseasedetection1
+[debug] [2023-04-03T06:36:07.121Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com:enable 200
+[debug] [2023-04-03T06:36:07.121Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com:enable [omitted]
+[debug] [2023-04-03T06:36:07.515Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-04-03T06:36:07.515Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-04-03T06:36:17.132Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-04-03T06:36:17.132Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/potatodiseasedetection1
+[debug] [2023-04-03T06:36:17.525Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-03T06:36:17.525Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/potatodiseasedetection1
+[debug] [2023-04-03T06:36:19.226Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com 200
+[debug] [2023-04-03T06:36:19.226Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-04-03T06:36:19.747Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-03T06:36:19.747Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/potatodiseasedetection1/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-04-03T06:38:41.650Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-04-03T06:38:41.896Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-04-03T06:38:41.896Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.19.1","browserURL":"https://www.gstatic.com/firebasejs/9.19.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.19.1/firebase.tgz"},"live":{"version":"9.19","browserURL":"https://www.gstatic.com/firebasejs/live/9.19/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.19/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.19.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.19.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.19.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.19.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.19.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.19.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.19.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.19.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.memory.js"}}
+[info] +  Wrote Y/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Sharoon\00fice\Data Science\Project\Potato Disease Classification End to End\archive\frontend is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=662699639&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-04-03T06:38:48.627Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-04-03T06:38:48.628Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-04-03T06:38:49.460Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-04-03T06:38:49.461Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-04-03T06:38:49.473Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-04-03T06:38:50.310Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-04-03T06:38:50.311Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"231dandy777","id":82279250,"node_id":"MDQ6VXNlcjgyMjc5MjUw","avatar_url":"https://avatars.githubusercontent.com/u/82279250?v=4","gravatar_id":"","url":"https://api.github.com/users/231dandy777","html_url":"https://github.com/231dandy777","followers_url":"https://api.github.com/users/231dandy777/followers","following_url":"https://api.github.com/users/231dandy777/following{/other_user}","gists_url":"https://api.github.com/users/231dandy777/gists{/gist_id}","starred_url":"https://api.github.com/users/231dandy777/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/231dandy777/subscriptions","organizations_url":"https://api.github.com/users/231dandy777/orgs","repos_url":"https://api.github.com/users/231dandy777/repos","events_url":"https://api.github.com/users/231dandy777/events{/privacy}","received_events_url":"https://api.github.com/users/231dandy777/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2021-04-10T15:49:45Z","updated_at":"2021-05-10T15:59:38Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as 231dandy777 
+[info] 
